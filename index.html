@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery</title>
+    <script src="https://kit.fontawesome.com/34d3836add.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;400;500;700&family=Poppins:wght@200;300&family=Quicksand:wght@300;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(250, 235, 215, 0.342);
+            border-radius: 0 0 5px 5px;
+        }
+        header img{
+            padding: 20px 10px 20px 10px;
+            height: 200px;
+        }
+
+        main{
+            display: flex;
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        nav{
+            margin-top: 20px;
+            padding: 20px;
+            height: 360px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            min-width: 200px;
+            border-radius: 5px;
+
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            
+        }
+        nav li{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav li:hover a{
+            color: #2ab200;;
+        }
+        nav li:hover{
+            background-color: #dfdfdfb2;
+        }
+        nav li a{
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+            color: black;
+
+        }
+        
+        .galery{
+            width: 100%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+            justify-items: center;
+            padding: 20px;
+        }
+        .image{
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            
+        }
+        .image img{
+            object-fit: cover;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+        }
+        .image:hover img{
+            scale: 1.2;
+        }
+        footer{
+            background-color: rgba(250, 235, 215, 0.342);
+            text-align: center;
+            width: 100%;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: small;
+            color: rgb(0, 0, 0);
+            padding-top: 20px;
+        }
+        .redes{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 10px 0 20px 0;
+        }
+        .redes div i{
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+        .redes #instagram :hover{
+            color: #C13584;
+            transform: scale(1.1);
+            transform: translate(-2px,-2px);
+            transition: 0.2s;
+        }
+        .redes #whatsapp :hover{
+            color: rgb(9, 211, 76);
+            transform: scale(1.1);
+            transform: translate(2px,-2px);
+            transition: 0.2s;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="src\logo.png" alt="">
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="">Burgers</a></li>
+                <li><a href="">Sandwich</a></li>
+                <li><a href="">Perro</a></li>
+                <li><a href="">Vegetariano</a></li>
+                <li><a href="">Especiales</a></li>
+            </ul>
+        </nav>
+        <div class="galery">
+             <div class="image">
+                <img src="src/burger albahaca.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger chicharrona.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger mexicano.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger negro sesamo.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger opa.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger pretzel.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger queso.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/burger sesamo y ajonjoli.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/pan brioche.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/pan ajonjoli y sesamo perro.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/pan junior ajo sandwich.png" alt="">
+             </div>
+             <div class="image">
+                <img src="src/pan focaccia sandwich.png" alt="">
+             </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Nuestras redes</h3>
+        <div class="redes">
+            <div id="instagram">
+                <a href="https://www.instagram.com/artesanales_aa/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div id="whatsapp">
+                <a href="https://www.instagram.com/artesanales_aa/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
